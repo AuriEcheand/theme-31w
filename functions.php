@@ -15,7 +15,11 @@ else{
 function mon_31W_setup() {
 	add_theme_support( 'title-tag' );
 	add_theme_support( 'html5', array('search-form') );	
-	add_theme_support('custom-background');	
+	add_theme_support('custom-background');
+	register_nav_menus( array(
+		'sidebar_menu' => __( 'Sidebar Menu', 'mon_31W' ),
+		'footer_menu'  => __( 'Footer Menu', 'mon_31W' ),
+	) );	
 }
 add_action( 'after_setup_theme', 'mon_31W_setup' );
 
