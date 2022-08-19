@@ -34,6 +34,22 @@ add_action( 'after_setup_theme', 'mon_31W_setup' );
 	}
 	add_action('wp_enqueue_scripts', 'mon_31W_enqueue');
 
+	/* ----------------------------------------------*/
+    /**
+     * Permet de modifier la requête principale de la page d'accueil
+     * pour extraire uniquement les articles de catégorie « accueil » 
+     * @param : $query représente l'object WP_Query contenant la requête principale
+     */
+
+    function mon_31W_pre_get_posts_accueil( $query ) {
+        if (    $query->is_home() 
+                && $query->is_main_query() 
+                && ! is_admin() ) {
+            $query->set( 'category_name', 'accueil' );
+        }
+    }
+    add_action( 'pre_get_posts', 'mon_31W_pre_get_posts_accueil' );
+
 
 
 
