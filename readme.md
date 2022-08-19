@@ -3,7 +3,7 @@
 ### Contient 20 commits
 
 [github-page](https://github.com/AuriEcheand/theme-31w/tree/tp2)
-> Le thème contient 5 fichiers:
+> Le thème contient 14 fichiers:
 index.php
 style.css
 functions.php
