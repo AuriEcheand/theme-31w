@@ -24,3 +24,16 @@
          echo "<p class='annonce__date'>La date: " . $date . "</p>";
          echo "<p class='annonce__heure'>L'heure: " . $heure . "</p>";
          echo "<p class='annonce__organisateur'>Le responsable de l'événement: " . $organisateur . "</p>";
+
+         // $size = 'thumbnail'; // (thumbnail, medium, large, full or custom size)
+      
+         $image = get_field('image');
+         if( !empty( $image ) ): ?>
+             <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo esc_attr($image['alt']); ?>" />
+         <?php endif; ?>
+         ?>
+      </article>
+      <?php endif ?>
+  
+</main>
+<?php get_footer() ?>
