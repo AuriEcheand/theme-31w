@@ -19,6 +19,7 @@ function mon_31W_setup() {
 	register_nav_menus( array(
 		'sidebar_menu' => __( 'Sidebar Menu', 'mon_31W' ),
 		'footer_menu'  => __( 'Footer Menu', 'mon_31W' ),
+		'accueil_menu'  => __( 'Accueil Menu', 'mon_31w' ),
 	) );	
 }
 add_action( 'after_setup_theme', 'mon_31W_setup' );
