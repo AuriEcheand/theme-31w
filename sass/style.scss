@@ -69,7 +69,9 @@ Text Domain: 31w
 /*--------------------------------------------------------------
 # Composante 
 --------------------------------------------------------------*/
-@import "composante/nav_sidebar";//navigation sidebar
+@import "composante/nav_sidebar"; // navigation sidebar
+@import "composante/nav_accueil"; // navigation accueil
+@import "composante/blocs__horizontaux"; // navigation sidebar
 
 /*--------------------------------------------------------------
 # Layout

@@ -646,6 +646,31 @@ textarea {
   background-color: #6199cc;
 }
 
+/**
+* block menu de la page d'accueil
+*/
+.blocs__horizontaux {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.blocs__horizontaux article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 300px;
+  border: 1px solid #aaa;
+  flex-basis: 50%;
+}
+@media screen and (min-width: 700px) {
+  .blocs__horizontaux article {
+    flex-basis: 22%;
+  }
+}
+
 /*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
