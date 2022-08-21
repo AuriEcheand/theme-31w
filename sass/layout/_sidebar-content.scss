@@ -30,6 +30,8 @@
 .site__footer {
 	grid-area: footer;
     background-color: lighten($color__background-zonegrid, 20%);
+	text-align: center;
+	
 }
 @media screen and (min-width:700px) {
 	.site {

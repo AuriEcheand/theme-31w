@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <section class="site__main">
-<h1>Mon premier modèle Wordpress </h1>
+<h1>Collège de Maisonneuve</h1>
 <?php
 if (have_posts()):
     while(have_posts()) : the_post(); ?>
@@ -14,11 +14,7 @@ if (have_posts()):
         ?>
         <code><?= $sigle ?></code>
         <code><?= $heure ?></code>
-
-
-
-
-        
+  
     <?php endwhile; ?>
 <?php endif; ?>    
 </section>

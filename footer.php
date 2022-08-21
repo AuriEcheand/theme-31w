@@ -1,5 +1,5 @@
 <footer class="site__footer">
-<h2>Le Pied de page de mon site WP</h2>
+<h2>Touts droits réservée © 2022 Auristela Echeverria</h2>
 </footer>
 <?php wp_footer(); ?>
 </section> <!-- fin .site -->

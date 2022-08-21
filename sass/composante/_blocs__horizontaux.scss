@@ -5,7 +5,7 @@
     flex-wrap: wrap;
 }
 
-.blocs__horizontaux article {
+.blocs__horizontaux div article {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -13,6 +13,8 @@
     height : 300px;
     border : 1px solid #aaa;
     flex-basis : 50%;
+    line-height: inherit;
+    background-color: #aaa;
     @media screen and (min-width : 700px){
         flex-basis : 22%;
     }

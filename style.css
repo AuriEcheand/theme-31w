@@ -2,7 +2,7 @@
 /*!
 Theme Name: 31w_Auri-TP1 
 Author: Auristela Echeverria
-Author URI: http://github.com/AuriEcheand/31W
+Author URI: https://github.com/AuriEcheand/theme-31w
 Description: Thème de base pour le cours de 31w
 Version: 1.0.0
 Tested up to: 5.4
@@ -603,7 +603,7 @@ textarea {
   z-index: 99;
   top: 0;
   left: 0;
-  background-color: #fff;
+  background-color: none;
   transform: translateX(-100vw);
   transition: transform 0.5s;
 }
@@ -679,7 +679,7 @@ textarea {
   flex-wrap: wrap;
 }
 
-.blocs__horizontaux article {
+.blocs__horizontaux div article {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -687,9 +687,11 @@ textarea {
   height: 300px;
   border: 1px solid #aaa;
   flex-basis: 50%;
+  line-height: inherit;
+  background-color: #aaa;
 }
 @media screen and (min-width: 700px) {
-  .blocs__horizontaux article {
+  .blocs__horizontaux div article {
     flex-basis: 22%;
   }
 }
@@ -726,6 +728,7 @@ textarea {
 .site__footer {
   grid-area: footer;
   background-color: #3d80bd;
+  text-align: center;
 }
 
 @media screen and (min-width: 700px) {

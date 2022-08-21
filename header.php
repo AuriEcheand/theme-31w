@@ -27,7 +27,7 @@
                 </h2>
             </section>
             <nav class="site__navigation">
-            Menu Lateral
+         
             </nav>
         </header>
         <section class="site__sidebar">
