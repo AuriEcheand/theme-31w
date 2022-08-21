@@ -32,6 +32,7 @@
         </header>
         <section class="site__sidebar">
             <h3>Menu Lateral</h3>
+            <img src="https://s2.svgbox.net/hero-solid.svg?ic=menu&color=000000" width="32" height="32">
             <?php wp_nav_menu(array(
                             `menu` => 'menu sidebar',
                             `container` =>'nav',
