@@ -390,7 +390,7 @@ h1, h2 {
 
 h3, h4, h5, h6, p {
   color: #1a1a1a;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 
 h1 {
@@ -480,6 +480,7 @@ table {
 --------------------------------------------- */
 a {
   color: #4169e1;
+  font-family: "Roboto", BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
 }
 a:visited {
   color: #800080;
@@ -496,6 +497,7 @@ a:hover, a:active {
 
 /* Forms
 --------------------------------------------- */
+.bouton,
 button,
 input[type=button],
 input[type=reset],
@@ -507,14 +509,18 @@ input[type=submit] {
   color: rgba(0, 0, 0, 0.8);
   line-height: 1;
   padding: 0.6em 1em 0.4em;
+  text-decoration: none;
 }
+.bouton:hover,
 button:hover,
 input[type=button]:hover,
 input[type=reset]:hover,
 input[type=submit]:hover {
   border-color: #ccc #bbb #aaa;
 }
-button:active, button:focus,
+.bouton:active, .bouton:focus,
+button:active,
+button:focus,
 input[type=button]:active,
 input[type=button]:focus,
 input[type=reset]:active,
@@ -573,6 +579,74 @@ textarea {
 }
 
 /*--------------------------------------------------------------
+# Composante 
+--------------------------------------------------------------*/
+#burger {
+  display: block;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  z-index: 100;
+  transform: rotate(0deg);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 700px) {
+  #burger {
+    display: none;
+  }
+}
+
+.menu__sidebar {
+  position: absolute;
+  padding-top: 75px;
+  width: 100vw;
+  z-index: 99;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  transform: translateX(-100vw);
+  transition: transform 0.5s;
+}
+@media screen and (min-width: 700px) {
+  .menu__sidebar {
+    position: static;
+    width: 100%;
+    transform: translateX(0vw);
+  }
+}
+
+#chk-burger {
+  display: none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+  transform: translateX(0);
+}
+
+#chk-burger:checked ~ #burger {
+  transform: rotate(90deg);
+}
+
+.menu__sidebar__ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0.4rem 0;
+}
+
+.menu__sidebar__ul .menu-item {
+  margin: 0.5rem 0;
+}
+
+.menu__sidebar__ul .menu-item a {
+  padding: 0.5rem;
+  line-height: 1.5rem;
+}
+
+.menu__sidebar__ul .menu-item a :hover {
+  background-color: #6199cc;
+}
+
+/*--------------------------------------------------------------
 # Layout
 --------------------------------------------------------------*/
 .site {
@@ -592,8 +666,7 @@ textarea {
 
 .site__main {
   grid-area: main;
-  overflow: hidden;
-  /* Resolves issue with <pre> elements forcing full width. */
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
   background-color: #6199cc;
 }
 
@@ -609,7 +682,7 @@ textarea {
 
 @media screen and (min-width: 700px) {
   .site {
-    grid-template-columns: 20vw auto;
+    grid-template-columns: 30vw auto;
     grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }

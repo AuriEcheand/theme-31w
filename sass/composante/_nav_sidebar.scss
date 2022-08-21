@@ -30,6 +30,18 @@
         transform: translateX(0vw);
     }
 }
+
+#chk-burger {
+    display : none;
+}
+
+#chk-burger:checked ~ .menu__sidebar {
+    transform : translateX(0);
+}
+#chk-burger:checked ~ #burger {
+    transform : rotate(90deg);
+}
+
 .menu__sidebar__ul
 {
     //background-color: rgb(34, 194, 64);
