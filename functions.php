@@ -51,6 +51,17 @@ add_action( 'after_setup_theme', 'mon_31W_setup' );
     }
     add_action( 'pre_get_posts', 'mon_31W_pre_get_posts_accueil' );
 
+	/* --------------------------------------------------------------------- */
+    function prefix_nav_description( $item_output, $item) {
+        if ( !empty( $item->description ) ) {
+            $item_output = str_replace( '</a>',
+            '<hr><span class="menu-item-description">' . $item->description . '</span><div class="menu-item-icone"></div></a>',
+                  $item_output );
+        }
+        return $item_output;
+    }
+    add_filter( 'walker_nav_menu_start_el', 'prefix_nav_description', 10, 2 );
+
 
 
 

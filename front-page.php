@@ -9,13 +9,13 @@
             <p><?php the_field('resume'); ?></p>
         <?php endwhile; ?>
     <?php endif; ?>   
-
-</section>
-<?php wp_nav_menu(array(
+    <?php wp_nav_menu(array(
                 'menu' => 'menu accueil',
                 'container' => 'nav'
 
             ));
             ?>
+</section>
+
 
 <?php get_footer(); ?>
