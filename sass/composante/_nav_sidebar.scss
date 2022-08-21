@@ -1,6 +1,19 @@
 .menu__sidebar
 {
-    //background-color: beige;
+    position :absolute;
+    padding-top: 75px;
+    width : 100vw;
+    z-index : 99;
+    top : 0;
+    left : 0;
+    background-color:  #fff;
+    transform: translateX(-100vw);
+    transition : transform .5s;
+    @media screen and (min-width : 700px){
+        position : static;
+        width: 100%;
+        transform: translateX(0vw);
+    }
 }
 .menu__sidebar__ul
 {

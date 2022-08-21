@@ -1,6 +1,6 @@
 <?php get_header(); ?> 
 <section class="site__main">
-    <h1>front-page.php</h1>
+    <h1>Collège de Maisonneuve</h1>
     <?php
     if (have_posts()):
         while(have_posts()) : the_post(); ?>
