@@ -24,6 +24,7 @@
     </div>  
     <?php wp_nav_menu(array(
                 'menu' => 'menu accueil',
+                'menu' => 'menu atelier',
                 'container' => 'nav'));?>
 </section>
 
