@@ -672,6 +672,30 @@ textarea {
   text-decoration: none;
 }
 
+/*menu atelier======================================>*/
+.menu-atelier-container {
+  margin-top: 50px;
+}
+
+.menu-atelier-container .menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu-atelier-container .menu .menu-item {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  border: 1px solid #aaa;
+  width: 30%;
+  padding: 1.5rem;
+}
+
+.menu-atelier-container .menu .menu-item a {
+  text-decoration: none;
+}
+
 .blocs__horizontaux {
   display: flex;
   justify-content: space-between;
