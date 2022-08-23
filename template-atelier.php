@@ -1,5 +1,5 @@
 <?php
 /**
- * Template name: Évenement 
+ * Template name: Atelier 
  */
 ?>
