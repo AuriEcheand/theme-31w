@@ -702,10 +702,7 @@ textarea {
 .site {
   display: grid;
   grid-template-columns: auto;
-  grid-template-areas: "header header" 
-  "sidebar sidebar" 
-  "main main" 
-  "footer footer";
+  grid-template-areas: "header header" "sidebar sidebar" "main main" "footer footer";
 }
 
 .site__header, .site__sidebar, .site__main, .site__footer {
@@ -737,10 +734,7 @@ textarea {
 @media screen and (min-width: 700px) {
   .site {
     grid-template-columns: 30vw auto;
-    grid-template-areas: "header header" 
-    "sidebar main" 
-    "footer footer";
+    grid-template-areas: "header header" "sidebar main" "footer footer";
   }
 }
-/*@import "no-sidebar";*/
-/*# sourceMappingURL=style.css.map */
+/*@import "no-sidebar";*//*# sourceMappingURL=style.css.map */

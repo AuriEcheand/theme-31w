@@ -1,0 +1,5 @@
+<?php
+/**
+ * Template name: Évenement 
+ */
+?>
